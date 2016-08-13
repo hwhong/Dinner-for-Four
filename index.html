@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Dinner for Four, UCSD, Dinner, revelle, muir, sixth, warren, erc, eat, place">     
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport"
+          	content="width=device-width,
+                 	height=device-height, user-scalable=no" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Dinner For Four</title>
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+	<link href="style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+<script type="text/javascript">
+	var ypos,image, about;
+	function parallax() {
+		ypos = window.pageYOffset;
+		image = document.getElementById('image');
+		image.style.top = ypos * .2 + 'px';
+	}
+	window.addEventListener('scroll', parallax);
+
+	function validate() {
+		var name = document.getElementById('name');
+		var email = document.getElementById('email');
+		var mobile = document.getElementById('mobile');
+
+		if (name.value == '' || name.value == null) {
+			alert('Please Enter Your Name');
+			return false;
+		}
+		if (email.value == ''|| email.value == null) {
+			alert('Please Enter Your Email');
+			return false;
+		}
+		if (mobile.value == ''|| mobile.value == null) {
+			alert('Please Enter Your Mobile Number');
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+
+<img id="image" src="cover4.jpg" height="710px" width="100%" />
+<div id="about">
+	<h1> dinner for Four. Socialization made easier. </h1>
+	<p> Dinner for Four is a new social platform that sets out to connect students with other students through a casual dinner meetup. After signing up and picking their preferred eating destination, students are randomly put into a group of four. This randomness allows students to meet people of diverse backgrounds and interests in the hope of fostering meaningful memories and friendships.</p> <br/>
+	<br/>
+	<p> The first Dinner for Four event will be on the 10th of October, 6:30 pm. <br/> <br/> Sign up below to get matched with your group of four! <br/> 
+</div>
+
+<div id="signup">
+	<form action="signup.php" method="POST" onsubmit="return validate()" class="pure.-form pure-form-aligned">
+		<label name = "sutitle"> <font size="7"> sign up here!</font></label> <br/>
+		<label ><font size="5" >Name:</font>
+		<input type="text" name="name" required ></label><br />
+		<label ><font size="5">Mobile:</font>
+		<input type="text" name="mobile" required></label><br />
+		<label ><font size="5">UCSD Email: </font>
+		<input type="text" name="email" required></label><br />
+		<label> <font size="5">Where to meet your Friends?</font><br/>
+			<input type="radio" name="place" value="Revelle" > <font size="5">Revelle (64 Degree) </font><br/>
+			<input type="radio" name="place" value="Muir"> <font size="5">Muir (Pines) </font><br/>
+			<input type="radio" name="place" value="Warren"> <font size="5">Warren (Canyon Vista)</font><br/>
+			<input type="radio" name="place" value="Erc" > <font size="5">ERC (Cafe Ventanas) </font><br/>
+			<input type="radio" name="place" value="Village"> <font size="5">The Village (The Bistro)</font><br/>
+		</label>
+		<input type="submit" value="Submit" name="submit">
+	</form>
+</div>
+
+<div class="copyright_row">
+		<p1> <span>made by W.H </span></p1>
+</div>
+
+</body>
+
+</html>
+
+	
