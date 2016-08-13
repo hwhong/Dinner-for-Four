@@ -1,0 +1,2 @@
+# Dinner-for-Four
+Dinner for Four is a new social platform that sets out to connect students with other students through a casual dinner meetup. After signing up and picking their preferred eating destination, students are randomly put into a group of four. This randomness allows students to meet people of diverse backgrounds and interests in the hope of fostering meaningful memories and friendships.
